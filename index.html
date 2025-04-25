@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjun Gaikwad - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        Arjun Gaikwad | Aspiring Electronics Engineer  
+    </header>
+
+    <div class="tab-container">
+        <button class="tab-button" onclick="openTab('about')">About Me</button>
+        <button class="tab-button" onclick="openTab('education')">Academic Details</button>
+        <button class="tab-button" onclick="openTab('skills')">Skills</button>
+        <button class="tab-button" onclick="openTab('projects')">Projects</button>
+        <button class="tab-button" onclick="openTab('certificates')">Certificates</button>
+        <button class="tab-button" onclick="openTab('extracurricular')">Extracurricular Activities</button>
+        <button class="tab-button" onclick="openTab('contact')">Contact</button>
+    </div>
+
+    <!-- About -->
+    <div id="about" class="tab-content active">
+        <h2>Welcome to My Portfolio! </h2>
+        <div class="card">
+            <img src="WhatsApp Image 2025-04-25 at 13.13.24_63b8062d.jpg" alt="Arjun Gaikwad" class="profile-pic">
+            <p>I am Arjun Gaikwad, a passionate Electronics Engineering student at MIT Academy of Engineering.  
+               I love problem-solving, coding, and Cricket.  
+               Feel free to explore my journey below!</p>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div id="education" class="tab-content">
+        <h2>Academic Details</h2>
+        <div class="card">
+            <ul>
+                <li><strong>SSC (10th Grade)</strong>: 73% (2022)</li>
+                <li><strong>HSC (12th Grade)</strong>: 73% (2024)</li>
+                <li><strong>CET Score</strong>: 40 Percentile</li>
+                <li><strong>Current</strong>: B.Tech in Electronics and Telecommunication, MIT Academy of Engineering</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills" class="tab-content">
+        <h2>Skills</h2>
+        <div class="card">
+            <ul>
+                <li>Programming: C, Python</li>
+                <li>Soft Skills: Communication, Teamwork</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects" class="tab-content">
+        <h2>Projects</h2>
+        <div class="card">
+            <ul>
+                <li><strong>Temperature Based Fan Controller</strong> – Automatically adjusts fan speed based on ambient temperature.</li>
+                <li><strong>LED Blinker Circuit</strong> – Built using 555 Timer IC and breadboard.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Certificates -->
+    <div id="certificates" class="tab-content">
+        <h2>Certificates</h2>
+        <div class="card">
+            <ul>
+                <li><strong>Cisco Certificate</strong> – Basics of computer networks and Python</li>
+                <li><strong>Interdojo Tournament</strong> – Karate Tournament</li>
+                <li><strong>NASSCOM Certificate</strong> – Emerging tech, digital fluency, foundational IT skills</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Extracurricular -->
+    <div id="extracurricular" class="tab-content">
+        <h2>Extracurricular Activities</h2>
+        <div class="card">
+            <ul>
+                <li>Cricket team player at college-level tournaments</li>
+                <li>Running</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="tab-content">
+        <h2>Contact</h2>
+        <div class="card">
+            <p>Email (College): <a href="mailto:2024010070211@mitaoe.ac.in">2024010070211@mitaoe.ac.in</a></p>
+            <p>Email (Personal): <a href="mailto:arjun0901gaikwad@gmail.com">arjun0901gaikwad@gmail.com</a></p>
+            <p>Phone: <a href="tel:+918999187768">+91 8999187768</a></p>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Arjun Gaikwad | Built with HTML, CSS & JavaScript  
+    </footer>
+
+    <script>
+        function openTab(tabName) {
+            var i, tabContent;
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+                tabContent[i].classList.remove("active");
+            }
+            var selectedTab = document.getElementById(tabName);
+            selectedTab.style.display = "block";
+            selectedTab.classList.add("active");
+        }
+
+        // Initial load
+        openTab('about');
+    </script>
+
+</body>
+</html>
